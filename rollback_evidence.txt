@@ -1,0 +1,16 @@
+Rollback Evidence – Day 1 Data Cleaning
+
+Original/raw data is preserved in the Python script ("day1_cleaning.py") before applying any cleaning operations.
+
+Cleaning operations performed:
+
+- Missing Salary values were handled using the median.
+- Missing Name values were replaced with "Unknown".
+- Duplicate records were removed.
+- Department names were standardized.
+- Joining dates were converted to a consistent datetime format.
+
+Rollback approach:
+If any cleaning operation needs to be reversed, the original raw dataset can be recreated from the "data" dictionary in "day1_cleaning.py". The original data is therefore preserved and can be used to restore the dataset to its initial state.
+
+Status: Rollback approach documented and original data preserved.
